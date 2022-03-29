@@ -112,4 +112,4 @@ plt.xlabel("time (s)"); plt.ylabel("Amplitude (m)")
 >Changing the *resolution* will change the shape of the plot. Technically, only 3 points (*res=4*) is enough to describe a circle with a particular radius; however, this isn’t visually satisfying! <br /> 
 >>At around *res=20*, the shape starts to look more as we would expect, but with many bumps. The bumps start to smooth out at around res=50. <br />
 >>>In general, I like to keep the *res= 100*. **Keep in mind, changing the resolution will change the number of points that make up the circle.**     
-<p align="left"><img src="https://github.com/SceneDuGreene/circle_plot/commit/94f9da126288bfd1086c9244321eaed3f8cfa3c6"> </p>
+<p align="left"><img src="https://github.com/SceneDuGreene/circle_plot/blob/main/resolution_compare.png"> </p>
