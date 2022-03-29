@@ -45,7 +45,7 @@ return circle_x1, circle_y1, x_0, y_0 #return values for later use
 ## Getting Started
 Start by figuring out the 4 pieces of information  you will need to assign to each circle. <br />
 We will make 2 concentric circles (circles that share the same origin):  <br />
-The blue one with radius = 1 and the orange one with radius = 0.5 <br />
+The blue one with *radius* = 1 and the orange one with *radius* = 0.5 <br />
 ```Python
 res = 100 # Resolution of shape. keep between 50->200
 x_0 = 0 ; y_0 = -0.5 # initial x,y position
@@ -107,3 +107,9 @@ plt.xlabel("time (s)"); plt.ylabel("Amplitude (m)")
 
 ## Example Output
 <p align="center"><img src="https://github.com/SceneDuGreene/circle_plot/blob/main/res%3D100.PNG" title="circle_plot"> </p>
+
+## Comparing Resolution
+>Changing the *resolution* will change the shape of the plot. Technically, only 3 points (*res=4*) is enough to describe a circle with a particular radius; however, this isn’t visually satisfying! <br /> 
+>>At around *res=20*, the shape starts to look more as we would expect, but with many bumps. The bumps start to smooth out at around res=50. <br />
+>>>In general, I like to keep the *res= 100*. **Keep in mind, changing the resolution will change the number of points that make up the circle.**     
+<p align="left"><img src="https://github.com/SceneDuGreene/circle_plot/commit/94f9da126288bfd1086c9244321eaed3f8cfa3c6"> </p>
