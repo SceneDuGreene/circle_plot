@@ -1,5 +1,7 @@
 # Plot a Circle
-Using the circle function and Matplotlib module to plot circles
+<p align="left"><img src="https://github.com/SceneDuGreene/circle_plot/blob/main/res%3D100.PNG" title="circle_plot"> </p>
+
+Using the circle function and Matplotlib module to plot circles while specifying resolution.
 
 # Overview
 This PYTHON program is used to plot circles at a specified resolution, initial position (x_0,y_0), and radius <br />
@@ -104,3 +106,4 @@ plt.xlabel("time (s)"); plt.ylabel("Amplitude (m)")
 ```
 
 ## Example Output
+<p align="center"><img src="https://github.com/SceneDuGreene/circle_plot/blob/main/res%3D100.PNG" title="circle_plot"> </p>
