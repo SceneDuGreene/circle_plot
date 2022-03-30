@@ -28,7 +28,7 @@ return circle_x1, circle_y1, x_0, y_0 #return values for later use
 
  # Background on Equations Used
  > In theory a circle can be composed of infinite points. Fortunately, in order to plot a circle, we only need to use between 50->200 of these points. See "Comparing Resolution" below to play around with this. <br />
->> Any instantaneous point (x,y) on a circle (with a specified radius) can be found using the below equations (if we specify θ). <br />
+>> Any instantaneous point (x,y) on a circle (with a specified radius) can be found using the below equations (but me MUST specify θ). <br />
 >> <p align="center"> <img src="https://github.com/SceneDuGreene/circle_plot/blob/main/Circle_PolarToRect.png" height=30% width=30%> </p>
 >> <p align="center"> <img src= "https://latex.codecogs.com/svg.image?x&space;=&space;rcos(\theta)&space;" title="x-coords" /> & <img src="https://latex.codecogs.com/svg.image?y&space;=&space;rsin(\theta)&space;" title="y-coords"/> for <img src="https://latex.codecogs.com/svg.image?\theta\in\left&space;[&space;0,2\pi&space;&space;\right&space;]" title="theta belongs to 0 to 2pi"/> </p>  <br />
  >> In order to accumulate enough points, we have to cycle through θ (at regular intervals from 0 to 2π) and solve for and store all resulting (x,y) values
