@@ -27,8 +27,11 @@ return circle_x1, circle_y1, x_0, y_0 #return values for later use
 >*Output4*) Initial Position, y1_0: Vertical offset from origin <br />
 
  # Background on Equations Used
- The locus of all points with coordinates (x,y) that are equidistant from a fixed point called the center of the circle can be found with these equations: <br />
-<p align="center"> <img src= "https://latex.codecogs.com/svg.image?x&space;=&space;rcos(\theta)&space;" title="x-coords" /> & <img src="https://latex.codecogs.com/svg.image?y&space;=&space;rsin(\theta)&space;" title="y-coords"/> for <img src="https://latex.codecogs.com/svg.image?\theta\in\left&space;[&space;0,2\pi&space;&space;\right&space;]" title="theta belongs to 0 to 2pi"/> </p>
+ > In theory a circle can be composed of infinite points. Fortunately, in order to plot a circle, we only need to use between 50->200 of these points. See "Comparing Resolution" below to play around with this. <br />
+>> Any instantaneous point (x,y) on a circle (with a specified radius) can be found using the below equations (if we specify θ). <br />
+>> <p align="center"> <img src="https://github.com/SceneDuGreene/circle_plot/blob/main/Circle_PolarToRect.png" height=30% width=30%> </p>
+>> <p align="center"> <img src= "https://latex.codecogs.com/svg.image?x&space;=&space;rcos(\theta)&space;" title="x-coords" /> & <img src="https://latex.codecogs.com/svg.image?y&space;=&space;rsin(\theta)&space;" title="y-coords"/> for <img src="https://latex.codecogs.com/svg.image?\theta\in\left&space;[&space;0,2\pi&space;&space;\right&space;]" title="theta belongs to 0 to 2pi"/> </p>  <br />
+ >> In order to accumulate enough points, we have to cycle through θ (at regular intervals from 0 to 2π) and solve for and store all resulting (x,y) values
  
  The **CIRCLE** function in its entirety:
  ```Python
@@ -69,8 +72,8 @@ plt.xlabel("time (s)"); plt.ylabel("Amplitude (m)")
 The code in its entirety will look something like this: <br />
 **NOTICE** that we must first import modules **numpy** and **matplotlib** <br />
 Then we must set up the figure and axes limits <br />
-Followed by defining the **CIRLCE** function
-then we can follow the procedure as shown above in the "Getting Started" Section
+Followed by defining the **CIRLCE** function <br />
+Finally, we can follow the procedure as shown above in the "Getting Started" Section
 ```Python
 import numpy as np
 import matplotlib.pyplot as plt 
@@ -111,7 +114,7 @@ plt.xlabel("time (s)"); plt.ylabel("Amplitude (m)")
 <p align="center"><img src="https://github.com/SceneDuGreene/circle_plot/blob/main/res%3D100.PNG" title="circle_plot"> </p>
 
 ## Comparing Resolution
->Changing the *resolution* will change the shape of the plot. Technically, only 3 points (*res=4*) is enough to describe a circle with a particular radius; however, this isn’t visually satisfying! <br /> 
+>Changing the *resolution* will change the shape of the plot. Mathmatically, only 3 non-colinear points (*res=4*) is enough to describe a circle with a particular radius; however, this isn’t visually satisfying! <br /> 
 >>At around *res=20*, the shape starts to look more as we would expect, but with many bumps. The bumps start to smooth out at around res=50. <br />
 >>>In general, I like to keep the *res= 100*. **Keep in mind, changing the resolution will change the number of points that make up the circle.**     
 <p align="left"><img src="https://github.com/SceneDuGreene/circle_plot/blob/main/resolution_compare.png"> </p>
