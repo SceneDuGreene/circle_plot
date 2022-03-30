@@ -1,10 +1,10 @@
 # Plot a Circle
 <p align="left"><img src="https://github.com/SceneDuGreene/circle_plot/blob/main/res%3D100.PNG" title="circle_plot"> </p>
 
-Using the circle function and Matplotlib module to plot circles while specifying resolution.
+Using the **CIRCLE** function and Matplotlib module to plot circles while specifying resolution.
 
 # Overview
-This PYTHON program is used to plot circles at a specified resolution, initial position (x_0,y_0), and radius <br />
+This PYTHON program is used to plot circles at a specified resolution, initial position (x_0,y_0), and radius. <br />
 Let's break up the **CIRCLE** function into two parts : *Input* vs *Output*
 
 ***Input - 4 variables required:***
@@ -43,7 +43,7 @@ return circle_x1, circle_y1, x_0, y_0 #return values for later use
 ```
 
 ## Getting Started
-Start by figuring out the 4 pieces of information  you will need to assign to each circle. <br />
+Start by figuring out the 4 pieces of information you will need to assign to each circle. <br />
 We will make 2 concentric circles (circles that share the same origin):  <br />
 The blue one with *radius* = 1 and the orange one with *radius* = 0.5 <br />
 ```Python
@@ -51,7 +51,7 @@ res = 100 # Resolution of shape. keep between 50->200
 x_0 = 0 ; y_0 = -0.5 # initial x,y position
 radius1 = 1; radius2 = 0.5 #radius of circles 1 & 2
 ```
-We will then call the **CIRCLE** fucntion, making sure to store all outputs for graphing purposes
+We will then call the **CIRCLE** function for each circle, making sure to store all outputs for graphing purposes
 ```Python
 x1, y1, x1_0, y1_0 = circle(radius1,x_0,y_0,res)  #r between 0->1
 x2, y2, x2_0, y2_0 = circle(radius2,x_0,y_0,res) #r between 0->1
@@ -68,7 +68,9 @@ plt.xlabel("time (s)"); plt.ylabel("Amplitude (m)")
 ## Exmaple Code
 The code in its entirety will look something like this: <br />
 **NOTICE** that we must first import modules **numpy** and **matplotlib** <br />
-Then we must set up the figure and axes limits: <br />
+Then we must set up the figure and axes limits <br />
+Followed by defining the **CIRLCE** function
+then we can follow the procedure as shown above in the "Getting Started" Section
 ```Python
 import numpy as np
 import matplotlib.pyplot as plt 
