@@ -68,11 +68,11 @@ plt.plot(centroid1[0],centroid1[1],'ko') #plot centroid point in black
 plt.title("Kinematic Fun, res=%d" % res)
 plt.xlabel("time (s)"); plt.ylabel("Amplitude (m)")
 ```
-## Exmaple Code
+## Example Code
 The code in its entirety will look something like this: <br />
 **NOTICE** that we must first import modules **numpy** and **matplotlib** <br />
 Then we must set up the figure and axes limits <br />
-Followed by defining the **CIRLCE** function <br />
+Followed by defining the **CIRCLE** function <br />
 Finally, we can follow the procedure as shown above in the "Getting Started" Section
 ```Python
 import numpy as np
@@ -113,6 +113,13 @@ plt.xlabel("time (s)"); plt.ylabel("Amplitude (m)")
 
 ## Example Output
 <p align="center"><img src="https://github.com/SceneDuGreene/circle_plot/blob/main/res%3D100.PNG" title="circle_plot"> </p>
+
+## Example Output: Changing Inital Position
+
+>```Python
+>x_0 = 0.0 ; y_0 = -0.5 # initial x,y position = (0.0,-0.5)
+>```
+><p align="center"> <img src="https://github.com/SceneDuGreene/circle_plot/blob/main/circle_changing_initial_position.png" height=100% width=100%> </p>
 
 ## Comparing Resolution
 >Changing the *resolution* will change the shape of the plot. Mathmatically, only 3 non-colinear points (*res=4*) is enough to describe a circle with a particular radius; however, this isn’t visually satisfying! <br /> 
