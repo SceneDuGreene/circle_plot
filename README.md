@@ -105,7 +105,8 @@ centroid1 = np.array([x1_0,y1_0]) #centroid of circle
 plt.plot(x1,y1,'b',) #plot circle1 in blue
 plt.plot(x2,y2,color='orange') #plot circle2 in orange
 plt.plot(centroid1[0],centroid1[1],'ko') #plot centroid point in black
-plt.title("Kinematic Fun, res=%d" % res)
+plt.title("Kinematic Fun, res=%d" % res) #display resolution in Title
+# plt.title("Kinematic Fun, origin=(%1.2f,%1.2f)" %(x_0,y_0)) #display origin coords in Title
 plt.xlabel("time (s)"); plt.ylabel("Amplitude (m)")
 
 ```
